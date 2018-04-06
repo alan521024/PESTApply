@@ -66,10 +66,7 @@ namespace PESTApply
             //(2)模块处理
             EngineHelper.GetModuleAll();
 
-            //(End)构建容器
-            EngineHelper.ContainerBuilder<IContainer>();
-
-            //Automapper
+            //(3)模块处理
             Mapper.Initialize(mapOpt =>
             {
                 var profiles = EngineHelper.GetTypeFinder().FindClassesOfType<AutoMapper.Profile>();
@@ -78,6 +75,9 @@ namespace PESTApply
                     mapOpt.AddProfile(item);
                 }
             });
+
+            //(End)构建容器
+            EngineHelper.ContainerBuilder<IContainer>();
         }
 
         private void Begin(object obj)
