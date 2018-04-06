@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DoubleX\Framework\DoubleX.Framework.Domain\DoubleX.Framework.Domain.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Framework\DoubleX.Framework.Identity\DoubleX.Framework.Identity.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Framework\DoubleX.Framework.Log4net\DoubleX.Framework.Log4net.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Framework\DoubleX.Framework.SqlSugar\DoubleX.Framework.SqlSugar.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Framework\DoubleX.Framework\DoubleX.Framework.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Infrastructure\DoubleX.Infrastructure.Utility\DoubleX.Infrastructure.Utility.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Infrastructure\DoubleX.Resource\DoubleX.Resource.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repository\_interface\" />
+  </ItemGroup>
+
+</Project>

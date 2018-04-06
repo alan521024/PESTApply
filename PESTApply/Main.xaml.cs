@@ -10,19 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DoubleX.Infrastructure.Utility;
+using DoubleX.Infrastructure.DesktopUI;
+using DoubleX.Framework;
+using DoubleX.Module.Basics;
+using DoubleX.Module.PESTApply;
 
 namespace PESTApply
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// Main.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Main : DxuiWindow
     {
-        public MainWindow()
+        public Main()
         {
             InitializeComponent();
+            this.mainFrame.Content = new PESTApply.View.Home();
         }
     }
 }

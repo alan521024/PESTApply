@@ -1,7 +1,60 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PESTApply.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApplyPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://order.etest.net.cn/select/index/12/0101</Value>
+    </Setting>
+    <Setting Name="Captcha" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://member.etest.net.cn/login/createCode</Value>
+    </Setting>
+    <Setting Name="CaptchaValJuHe" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://op.juhe.cn/vercode/index</Value>
+    </Setting>
+    <Setting Name="Login" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://member.etest.net.cn/login/loginSuccess</Value>
+    </Setting>
+    <Setting Name="Apply" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://order.etest.net.cn/select/confirmation</Value>
+    </Setting>
+    <Setting Name="Areas" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://order.etest.net.cn/petSelect/getProvinces?cbd=knight&amp;geoId=310000&amp;proId=12</Value>
+    </Setting>
+    <Setting Name="OrgAndSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://order.etest.net.cn/select/getAttr?cbd=knight</Value>
+    </Setting>
+    <Setting Name="Package" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://order.etest.net.cn/select/getList?cbd=knight&amp;</Value>
+    </Setting>
+    <Setting Name="Account" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1161536884@qq.com</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">123456fan</Value>
+    </Setting>
+    <Setting Name="ProId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="NodeCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0101</Value>
+    </Setting>
+    <Setting Name="StudentType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">08</Value>
+    </Setting>
+    <Setting Name="MainArea" Type="System.String" Scope="User">
+      <Value Profile="(Default)">310000</Value>
+    </Setting>
+    <Setting Name="PaymentType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="TimesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//dd[@id='time']</Value>
+    </Setting>
+    <Setting Name="JuHeKey1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">01bf2a9cd67d8dccd70cfd8a76aee77b</Value>
+    </Setting>
+    <Setting Name="JuHeKey2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1004</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

@@ -1,0 +1,29 @@
+﻿<dxui:DxuiWindow x:Class="PESTApply.View.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PESTApply.View"
+        mc:Ignorable="d"
+        xmlns:dxui="http://doublex.com/doublexui"
+        DataContext="{Binding Source={StaticResource Locator},Path=Login}"
+        Height="200" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="15" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <TextBox Name="txtLoginName" Tag="账号:" Style="{DynamicResource dxuiTextBoxGroup}" Text="{Binding SourceModel.Account}" Margin="0,0,0,5" IsEnabled="False"></TextBox>
+            <TextBox Name="txtPassword" Tag="密码:" Style="{DynamicResource dxuiTextBoxGroup}" Text="{Binding SourceModel.Password}" Margin="0,0,0,5" IsEnabled="False"></TextBox>
+            <WrapPanel Margin="0,0,0,5" Orientation="Horizontal">
+                <TextBox Name="txtCaptchaCode" Tag="验证:" Style="{DynamicResource dxuiTextBoxGroup}" Text="{Binding CaptchaCode}" Width="186"></TextBox>
+                <Image x:Name="imgCaptcha" Width="73" Height="28"  Source="{Binding CaptchaBitmapImage}" Margin="5,0,0,0" HorizontalAlignment="Right">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding OnCaptchaChange}"  />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Image>
+            </WrapPanel>
+            <Button Name="btnLogin" Style="{DynamicResource dxui-button-default}" Command="{Binding OnLogin}" Content="登录" Margin="37,0,0,0" ></Button>
+        </StackPanel>
+    </Grid>
+</dxui:DxuiWindow>
