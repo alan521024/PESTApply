@@ -84,13 +84,13 @@
                     <Button Name="btnImportStart" Style="{DynamicResource dxui-button-default}" Command="{Binding OnImportStart}" Content="导入数据" Margin="0"></Button>
                     <Button Name="btnImportStop" Style="{DynamicResource dxui-button-default}" Command="{Binding OnImportStop}" Content="停止导入" Visibility="Collapsed" Margin="0" ></Button>
                     <Button Name="btnClear" Style="{DynamicResource dxui-button-default}" Command="{Binding OnClear}" Content="清空信息" Margin="5,0,0,0"></Button>
-                    <Button Name="btnSave" Style="{DynamicResource dxui-button-default}" Command="{Binding OnSave}" Content="保存记录" Margin="5,0,0,0" ></Button>
+                    <Button Name="btnSave" Style="{DynamicResource dxui-button-default}" Command="{Binding OnSave}" Content="保存记录" Margin="5,0,0,0" Visibility="Collapsed" ></Button>
+                    <Button Name="btnDictionary" Style="{DynamicResource dxui-button-default}" Command="{Binding OnDictionary}" Content="数据维护" Margin="5,0,0,0" ></Button>
 
                     <Button Name="btnLoginStart" Style="{DynamicResource dxui-button-default}" Command="{Binding OnLoginStart}" Margin="0,5,0,0">批量登录</Button>
                     <Button Name="btnLoginStop" Style="{DynamicResource dxui-button-default}" Command="{Binding OnLoginStop}"  Visibility="Collapsed" Margin="0,5,0,0">停止登录</Button>
                     <Button Name="btnWorkStart" Style="{DynamicResource dxui-button-default}" Command="{Binding OnWorkStart}"   Margin="5,5,0,0">批量申请</Button>
                     <Button Name="btnWorkStop" Style="{DynamicResource dxui-button-default}" Command="{Binding OnWorkStop}" Visibility="Collapsed" Margin="5,5,0,0">停止申请</Button>
-                    <Button Name="btnDictionary" Style="{DynamicResource dxui-button-default}" Command="{Binding OnDictionary}" Content="数据维护" Margin="5,5,0,0" ></Button>
 
                     <Button Name="btnRefreshStart" Style="{DynamicResource dxui-button-default}" Command="{Binding OnRefreshStart}" Visibility="Collapsed"  Margin="5,5,0,0">状态刷新</Button>
                     <Button Name="btnRefreshStop" Style="{DynamicResource dxui-button-default}" Command="{Binding OnRefreshStop}" Visibility="Collapsed" Margin="5,5,0,0" >停止刷新</Button>

@@ -937,6 +937,15 @@ namespace PESTApply
             ShowStatusText(string.Format("{0}[申请]（{1}）", model.Name, model.IsWork ? "成功" : "失败"),
                 loggerLev: model.IsWork ? EnumLoggerLev.Info : EnumLoggerLev.Error);
         }
+        
+
+        /// <summary>
+        /// 登录状态刷新
+        /// </summary>
+        private void LoginRefresh()
+        {
+
+        }
 
 
         /// <summary>
@@ -972,6 +981,7 @@ namespace PESTApply
                 }
             }
         }
+
 
         #endregion
 
