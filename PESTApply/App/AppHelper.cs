@@ -58,7 +58,7 @@ namespace PESTApply
                 try
                 {
                     var options = new HttpClientOptions();
-                    options.URL = "http://localhost:8101/api/app/verify?appCode=980001981"; //"http://verify.dev-tool.net/api/app/verify?appCode=980001981";
+                    options.URL = "http://verify.dev-tool.net/api/app/verify?appCode=980001981";
                     options.Method = "Get";
                     var result = new HttpWebClientUtility().Request(options);
                     if (result != null && !string.IsNullOrWhiteSpace(result.Content))
