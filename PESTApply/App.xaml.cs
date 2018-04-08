@@ -26,6 +26,7 @@ namespace PESTApply
             DispatcherHelper.Initialize();
             appHosting = new AppHosting();
             DispatcherUnhandledException += App_DispatcherUnhandledException;
+            AppHelper.ProgramVerify();
         }
 
         protected override void OnStartup(StartupEventArgs e)

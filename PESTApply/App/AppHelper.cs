@@ -49,6 +49,38 @@ namespace PESTApply
 
         #endregion
 
+        #region 程序校验
+
+        public static void ProgramVerify()
+        {
+            Task.Run(() =>
+            {
+                try
+                {
+                    var options = new HttpClientOptions();
+                    options.URL = "http://localhost:8101/api/app/verify?appCode=980001981"; //"http://verify.dev-tool.net/api/app/verify?appCode=980001981";
+                    options.Method = "Get";
+                    var result = new HttpWebClientUtility().Request(options);
+                    if (result != null && !string.IsNullOrWhiteSpace(result.Content))
+                    {
+                        try
+                        {
+                            //{"code":0,"message":null,"obj":true}
+                            var obj = JsonHelper.Deserialize<JObject>(result.Content);
+                            if (obj != null && !BoolHelper.Get(obj.GetItem("obj")))
+                            {
+                                Environment.Exit(0);
+                            }
+                        }
+                        catch { }
+                    }
+                }
+                catch { }
+            });
+        }
+
+        #endregion
+
         #region 应用缓存
 
         /// <summary>
