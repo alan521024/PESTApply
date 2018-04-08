@@ -1,0 +1,71 @@
+
+/****笔试+口试******/
+<tr>
+    <input type=\"hidden\" name=\"regList[0].categoryId\" value=\"9c98e0ce6416473596c3f8df265d681c\">
+    <input type=\"hidden\" name=\"regList[0].packageId\" value=\"12A272\">
+    <input type=\"hidden\" name=\"regList[0].orgGeo\" value=\"110000110108\">
+    <input type=\"hidden\" name=\"regList[0].relationshipId\" value=\"12000100090006\">
+    <input type=\"hidden\" name=\"regList[0].examId\" value=\"201812001\">
+    <input type=\"hidden\" name=\"regList[0].examDate\" value=\"2018.03.31 上午\">
+    <input type=\"hidden\" name=\"regList[0].subjectId\" value=\"120902\">
+
+    <input type=\"hidden\" name=\"regList[0].categoryId\" value=\"9c98e0ce6416473596c3f8df265d681c\">
+    <input type=\"hidden\" name=\"regList[0].packageId\" value=\"12A272\">
+    <input type=\"hidden\" name=\"regList[0].orgGeo\" value=\"110000110108\">
+    <input type=\"hidden\" name=\"regList[0].relationshipId\" value=\"12000100090006\">
+    <input type=\"hidden\" name=\"regList[0].examId\" value=\"201812001\">
+    <input type=\"hidden\" name=\"regList[0].examDate\" value=\"2018.03.31 下午 ~ 2018.04.01 下午\">
+    <input type=\"hidden\" name=\"regList[0].subjectId\" value=\"120901\">
+
+    <input type=\"hidden\" name=\"scoreId\" value=\"\">
+    <input type=\"hidden\" name=\"uId\" value=\"94b3bf6d002f4fe586e122ce93c0299d\">
+    <input type=\"hidden\" name=\"proId\" value=\"12\">
+    <input type=\"hidden\" name=\"nodeCode\" value=\"0101\">
+    <input type=\"hidden\" name=\"studentType\" value=\"08\">
+    <input type=\"hidden\" name=\"examId\" value=\"201812001\">
+    <input type=\"hidden\" name=\"orgGeo\" value=\"110000110108\">
+    <input type=\"hidden\" name=\"paymentType\" value=\"1\">
+    <input type=\"hidden\" name=\"packageId\" value=\"9c98e0ce6416473596c3f8df265d681c#\">
+    <input type=\"hidden\" name=\"relationshipId\" value=\"12000100090006\">
+    </tr>
+
+
+//表单JSON
+
+http://order.etest.net.cn/select/confirmation
+examId	201812001
+nodeCode	0101
+orgGeo	110000110108
+packageId	9c98e0ce6416473596c3f8df265d681c#
+paymentType	1
+proId	12
+regList[0].categoryId	{…}
+0	9c98e0ce6416473596c3f8df265d681c
+1	9c98e0ce6416473596c3f8df265d681c
+regList[0].examDate	{…}
+0	2018.03.31+上午
+1	2018.03.31+下午+~+2018.04.01+下午
+regList[0].examId	{…}
+0	201812001
+1	201812001
+regList[0].orgGeo	{…}
+0	110000110108
+1	110000110108
+regList[0].packageId	{…}
+0	12A272
+1	12A272
+regList[0].relationshipId	{…}
+0	12000100090006
+1	12000100090006
+regList[0].subjectId	{…}
+0	120902
+1	120901
+relationshipId	12000100090006
+scoreId	
+studentType	08
+uId	94b3bf6d002f4fe586e122ce93c0299d
+
+
+
+
+

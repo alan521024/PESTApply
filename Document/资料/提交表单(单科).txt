@@ -1,0 +1,45 @@
+<tr>
+<input type=\"hidden\" name=\"regList[0].categoryId\" value=\"120901\">
+<input type=\"hidden\" name=\"regList[0].packageId\" value=\"12A310\">
+<input type=\"hidden\" name=\"regList[0].orgGeo\" value=\"310000310101\">
+<input type=\"hidden\" name=\"regList[0].relationshipId\" value=\"12000100120014\">
+<input type=\"hidden\" name=\"regList[0].examId\" value=\"201812001\">
+<input type=\"hidden\" name=\"regList[0].examDate\" value=\"2018.03.31 下午 ~ 2018.04.01 下午\">
+<input type=\"hidden\" name=\"regList[0].subjectId\" value=\"120901\">
+<input type=\"hidden\" name=\"scoreId\" value=\"\">
+<input type=\"hidden\" name=\"uId\" value=\"94b3bf6d002f4fe586e122ce93c0299d\">
+<input type=\"hidden\" name=\"proId\" value=\"12\">
+<input type=\"hidden\" name=\"nodeCode\" value=\"0101\">
+<input type=\"hidden\" name=\"studentType\" value=\"08\">
+<input type=\"hidden\" name=\"examId\" value=\"201812001\">
+<input type=\"hidden\" name=\"orgGeo\" value=\"310000310101\">
+<input type=\"hidden\" name=\"paymentType\" value=\"1\">
+<input type=\"hidden\" name=\"packageId\" value=\"120901#\">
+<input type=\"hidden\" name=\"relationshipId\" value=\"12000100120014\">
+</tr>
+
+
+
+examId	201812001
+nodeCode	0101
+orgGeo	310000310101
+packageId	120901#
+paymentType	1
+proId	12
+regList[0].categoryId	120901
+regList[0].examDate	2018.03.31+下午+~+2018.04.01+下午
+regList[0].examId	201812001
+regList[0].orgGeo	310000310101
+regList[0].packageId	12A310
+regList[0].relationshipId	12000100120014
+regList[0].subjectId	120901
+relationshipId	12000100120014
+scoreId	
+studentType	08
+uId	94b3bf6d002f4fe586e122ce93c0299d
+
+
+{
+  "msg" : "报名未开始。",
+  "success" : false
+}

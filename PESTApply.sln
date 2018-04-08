@@ -35,6 +35,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PESTApply", "PESTApply\PEST
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{4E6CD222-0F63-476B-95B8-769B8303D3A5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Install", "Install", "{4AEE3302-197B-4BA9-9CDF-3BC232CF2A79}"
+	ProjectSection(SolutionItems) = preProject
+		Document\Install\favicon.ico = Document\Install\favicon.ico
+		Document\Install\Install.nsi = Document\Install\Install.nsi
+		Document\Install\Licence.txt = Document\Install\Licence.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "资料", "资料", "{F497E7F7-A6AF-4C55-9749-B922C7D4692F}"
+	ProjectSection(SolutionItems) = preProject
+		Document\资料\Template-多.xlsx = Document\资料\Template-多.xlsx
+		Document\资料\Template-少.xlsx = Document\资料\Template-少.xlsx
+		Document\资料\公共英语三级网上报名流程.docx = Document\资料\公共英语三级网上报名流程.docx
+		Document\资料\公共英语三级网报用户名和密码.xlsx = Document\资料\公共英语三级网报用户名和密码.xlsx
+		Document\资料\提交表单(单科).txt = Document\资料\提交表单(单科).txt
+		Document\资料\提交表单(双科).txt = Document\资料\提交表单(双科).txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,6 +117,8 @@ Global
 		{34A86E02-2F29-4DF3-B37C-FD31BF176FC4} = {51CAD715-35CF-4AD2-818F-B3E832C9CF9E}
 		{BC6054F3-19A7-4775-A48E-0457B219F0D6} = {E9C9FEBC-57CF-46C8-ADFA-D360087812E1}
 		{F26D69C9-5FE9-4E67-BA13-019B8D5863B9} = {E9C9FEBC-57CF-46C8-ADFA-D360087812E1}
+		{4AEE3302-197B-4BA9-9CDF-3BC232CF2A79} = {4E6CD222-0F63-476B-95B8-769B8303D3A5}
+		{F497E7F7-A6AF-4C55-9749-B922C7D4692F} = {4E6CD222-0F63-476B-95B8-769B8303D3A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C4F6A53-96FA-4C24-994B-67E7E285953D}
