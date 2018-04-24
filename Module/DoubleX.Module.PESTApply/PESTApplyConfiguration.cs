@@ -14,19 +14,19 @@ namespace DoubleX.Module.PESTApply
     public class PESTApplyConfiguration : IComponentConfiguration
     {
         /// <summary>
-        /// 显示名称
+        /// 组件名称(命名空间)
         /// </summary>
-        public string Title { get { return "英语考试申请"; } }
+        public string Namespace { get { return "DoubleX.Module.PESTApply"; } }
 
         /// <summary>
-        /// 模块(标识)
+        /// 组件标识
         /// </summary>
         public string Name { get { return "PESTApply"; } }
 
         /// <summary>
-        /// 模块空间
+        /// 显示名称
         /// </summary>
-        public string Namespace { get { return "DoubleX.Module.PESTApply"; } }
+        public string Title { get { return "英语考试申请"; } }
 
         /// <summary>
         /// 程序集
@@ -34,12 +34,7 @@ namespace DoubleX.Module.PESTApply
         public Assembly Assemblies { get { return this.GetType().Assembly; } }
 
         /// <summary>
-        /// 是否插件
-        /// </summary>
-        public bool IsPlug { get { return false; } }
-
-        /// <summary>
-        /// 模块安装
+        /// 组件安装
         /// </summary>
         public void Install()
         {
@@ -47,7 +42,7 @@ namespace DoubleX.Module.PESTApply
         }
 
         /// <summary>
-        /// 模块卸载
+        /// 组件卸载
         /// </summary>
         public void Shutdown()
         {
@@ -55,7 +50,7 @@ namespace DoubleX.Module.PESTApply
         }
 
         /// <summary>
-        /// 模块配置
+        /// 组件配置
         /// </summary>
         public void Configuration()
         {
