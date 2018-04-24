@@ -40,7 +40,7 @@ namespace PESTApply
             get { return appTitle; }
             set { appTitle = value; RaisePropertyChanged(() => appTitle); }
         }
-        private string appTitle = EngineHelper.GetConfig().AppTitle;
+        private string appTitle = EngineHelper.Configuration.AppTitle;
 
 
         #endregion

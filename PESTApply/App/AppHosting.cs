@@ -63,13 +63,13 @@ namespace PESTApply
                 opt.RepositoryEntityType = typeof(SqlSugarRepository<>);
             });
 
-            //(2)模块处理
-            EngineHelper.GetModuleAll();
+            //(2)组件安装初始配置
+            EngineHelper.Component.List.ForEach(x => x.Install());
 
             //(3)模块处理
             Mapper.Initialize(mapOpt =>
             {
-                var profiles = EngineHelper.GetTypeFinder().FindClassesOfType<AutoMapper.Profile>();
+                var profiles = EngineHelper.TypeFinder.FindClassesOfType<AutoMapper.Profile>();
                 foreach (var item in profiles)
                 {
                     mapOpt.AddProfile(item);

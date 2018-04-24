@@ -14,7 +14,6 @@
     /// <summary>
     /// PEST考试信息业务
     /// </summary>
-    [Service(IsEnableApiService = false)]
     public class PETSPackageService : ApplicationService, IPETSPackageService
     {
         public PETSPackageService(IRepository<PETSPackageEntity> _repository)

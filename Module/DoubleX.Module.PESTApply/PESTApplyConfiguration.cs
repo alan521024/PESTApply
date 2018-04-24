@@ -11,7 +11,7 @@ namespace DoubleX.Module.PESTApply
     /// <summary>
     /// 请求任务模块配置
     /// </summary>
-    public class QuestModuleConfigure : IModuleConfigure
+    public class PESTApplyConfiguration : IComponentConfiguration
     {
         /// <summary>
         /// 显示名称
