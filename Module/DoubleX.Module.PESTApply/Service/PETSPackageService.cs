@@ -30,7 +30,7 @@
 
         public int BatchInsert(List<PETSPackageEntity> sources)
         {
-            if (VerifyHelper.IsEmpty(sources))
+            if (sources.IsEmpty())
                 return 0;
             return repository.Insert(sources);
         }
