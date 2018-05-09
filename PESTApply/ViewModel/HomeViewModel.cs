@@ -23,6 +23,7 @@ using NPOI.SS.UserModel;
 using DoubleX.Infrastructure.Utility;
 using DoubleX.Infrastructure.DesktopUI;
 using DoubleX.Framework;
+using DoubleX.Module;
 using DoubleX.Module.Basics;
 using DoubleX.Module.PESTApply;
 

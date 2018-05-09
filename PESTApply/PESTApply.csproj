@@ -363,6 +363,9 @@
     <Content Include="Engine.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Config\Sms.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -405,13 +408,25 @@
       <Project>{9e5e6e1f-b608-4bd9-bfe5-19ee92fe334e}</Project>
       <Name>DoubleX.Infrastructure.Utility</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\DoubleX\Infrastructure\DoubleX.Resource\DoubleX.Resource.csproj">
-      <Project>{73605cad-7f69-4378-aaf9-57d393ddf456}</Project>
-      <Name>DoubleX.Resource</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\DoubleX\Module\DoubleX.Module.Basics\DoubleX.Module.Basics.csproj">
       <Project>{f26d69c9-5fe9-4e67-ba13-019b8d5863b9}</Project>
       <Name>DoubleX.Module.Basics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DoubleX\Module\DoubleX.Module\DoubleX.Module.csproj">
+      <Project>{f061820f-b814-4d1e-9a00-33a576a6d880}</Project>
+      <Name>DoubleX.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DoubleX\Plugs\DoubleX.Plug.Sms\DoubleX.Plug.Sms.csproj">
+      <Project>{70763791-a932-47cd-888f-71d48dcf31cf}</Project>
+      <Name>DoubleX.Plug.Sms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DoubleX\Plugs\DoubleX.Plug.WeiXin\DoubleX.Plug.WeiXin.csproj">
+      <Project>{320417cf-09f9-4194-959f-63a16f12fa42}</Project>
+      <Name>DoubleX.Plug.WeiXin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DoubleX\Resource\DoubleX.Resource\DoubleX.Resource.csproj">
+      <Project>{6d1b8153-3616-44a8-814b-0d42c564b25f}</Project>
+      <Name>DoubleX.Resource</Name>
     </ProjectReference>
     <ProjectReference Include="..\Module\DoubleX.Module.PESTApply\DoubleX.Module.PESTApply.csproj">
       <Project>{bc6054f3-19a7-4775-a48e-0457b219f0d6}</Project>

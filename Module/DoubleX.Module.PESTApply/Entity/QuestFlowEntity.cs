@@ -7,7 +7,7 @@
     using System.Threading;
     using System.Threading.Tasks;
     using SqlSugar;
-    using DoubleX.Resource.Language;
+    using DoubleX.Resource.Culture;
     using DoubleX.Infrastructure.Utility;
     using DoubleX.Framework;
 

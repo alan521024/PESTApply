@@ -55,9 +55,9 @@ namespace DoubleX.Module.PESTApply
         public void Configuration()
         {
             //仓储/业务 IOC注入配置
-            EngineHelper.RegisterType<IQuestService, QuestService>(DomainConfiguration.Options.ServiceIocRegisterOption);
-            EngineHelper.RegisterType<IQuestFlowService, QuestFlowService>(DomainConfiguration.Options.ServiceIocRegisterOption);
-            EngineHelper.RegisterType<IPETSPackageService, PETSPackageService>(DomainConfiguration.Options.ServiceIocRegisterOption);
+            EngineHelper.RegisterType<IQuestService, QuestService>(DomainConfiguration.Options.IocServiceOption);
+            EngineHelper.RegisterType<IQuestFlowService, QuestFlowService>(DomainConfiguration.Options.IocServiceOption);
+            EngineHelper.RegisterType<IPETSPackageService, PETSPackageService>(DomainConfiguration.Options.IocServiceOption);
 
         }
     }

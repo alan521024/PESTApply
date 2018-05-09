@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DoubleX.Infrastructure.Utility;
 using DoubleX.Framework;
+using DoubleX.Module;
 using DoubleX.Module.Basics;
 using DoubleX.Module.PESTApply;
 

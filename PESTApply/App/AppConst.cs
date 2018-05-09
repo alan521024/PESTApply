@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoubleX.Module;
 using DoubleX.Module.Basics;
 using DoubleX.Module.PESTApply;
 

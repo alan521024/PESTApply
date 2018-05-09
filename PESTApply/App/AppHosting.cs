@@ -6,6 +6,8 @@ using Autofac;
 using AutoMapper;
 using DoubleX.Infrastructure.Utility;
 using DoubleX.Framework;
+using DoubleX.Plug.Sms;
+using DoubleX.Plug.WeiXin;
 using DoubleX.Module.Basics;
 using DoubleX.Module.PESTApply;
 
@@ -59,14 +61,17 @@ namespace PESTApply
             //(1)领域相关初始配置
             DomainConfiguration.Initialize(opt =>
             {
-                opt.RepositoryEntityKeyType = typeof(SqlSugarRepository<,>);
-                opt.RepositoryEntityType = typeof(SqlSugarRepository<>);
+                opt.Repositorys.Add(new KeyValueModel<Type, Type>(typeof(IRepository<>), typeof(SqlSugarRepository<>)));
+                opt.Repositorys.Add(new KeyValueModel<Type, Type>(typeof(IRepository<,>), typeof(SqlSugarRepository<,>)));
             });
 
             //(2)组件安装初始配置
             EngineHelper.Component.List.ForEach(x => x.Install());
 
-            //(3)模块处理
+            //(3)插件注入配置
+            SmsConfiguration.Initialize();
+
+            //(4)模块处理
             Mapper.Initialize(mapOpt =>
             {
                 var profiles = EngineHelper.TypeFinder.FindClassesOfType<AutoMapper.Profile>();

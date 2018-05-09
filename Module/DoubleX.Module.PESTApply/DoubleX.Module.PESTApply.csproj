@@ -11,7 +11,9 @@
     <ProjectReference Include="..\..\..\DoubleX\Framework\DoubleX.Framework.SqlSugar\DoubleX.Framework.SqlSugar.csproj" />
     <ProjectReference Include="..\..\..\DoubleX\Framework\DoubleX.Framework\DoubleX.Framework.csproj" />
     <ProjectReference Include="..\..\..\DoubleX\Infrastructure\DoubleX.Infrastructure.Utility\DoubleX.Infrastructure.Utility.csproj" />
-    <ProjectReference Include="..\..\..\DoubleX\Infrastructure\DoubleX.Resource\DoubleX.Resource.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Module\DoubleX.Module.Basics\DoubleX.Module.Basics.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Module\DoubleX.Module\DoubleX.Module.csproj" />
+    <ProjectReference Include="..\..\..\DoubleX\Resource\DoubleX.Resource\DoubleX.Resource.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -7,7 +7,7 @@
     using System.Threading;
     using System.Threading.Tasks;
     using System.Security.Claims;
-    using DoubleX.Resource.Language;
+    using DoubleX.Resource.Culture;
     using DoubleX.Infrastructure.Utility;
     using DoubleX.Framework;
 
@@ -25,7 +25,7 @@
 
         public List<PETSPackageEntity> GetAll()
         {
-            return repository.Query();
+            return repository.Find();
         }
 
         public int BatchInsert(List<PETSPackageEntity> sources)

@@ -7,7 +7,7 @@
     using System.Threading;
     using System.Threading.Tasks;
     using System.Security.Claims;
-    using DoubleX.Resource.Language;
+    using DoubleX.Resource.Culture;
     using DoubleX.Infrastructure.Utility;
     using DoubleX.Framework;
 
@@ -29,7 +29,7 @@
         /// <returns></returns>
         public List<QuestFlowEntity> GetAll()
         {
-            return repository.Query();
+            return repository.Find();
         }
     }
 }

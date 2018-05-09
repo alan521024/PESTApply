@@ -8,7 +8,7 @@
     using System.Threading.Tasks;
     using System.Security.Claims;
     using AutoMapper;
-    using DoubleX.Resource.Language;
+    using DoubleX.Resource.Culture;
     using DoubleX.Infrastructure.Utility;
     using DoubleX.Framework;
 

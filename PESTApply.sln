@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleX.Resource", "..\DoubleX\Infrastructure\DoubleX.Resource\DoubleX.Resource.csproj", "{73605CAD-7F69-4378-AAF9-57D393DDF456}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleX.Infrastructure.Utility", "..\DoubleX\Infrastructure\DoubleX.Infrastructure.Utility\DoubleX.Infrastructure.Utility.csproj", "{9E5E6E1F-B608-4BD9-BFE5-19EE92FE334E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleX.Infrastructure.DesktopUI", "..\DoubleX\Infrastructure\DoubleX.Infrastructure.DesktopUI\DoubleX.Infrastructure.DesktopUI.csproj", "{BA9052DB-D5F1-4F94-95E3-87F9DB5B97B0}"
@@ -54,16 +52,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "资料", "资料", "{F497E7
 		Document\资料\提交表单(双科).txt = Document\资料\提交表单(双科).txt
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleX.Module", "..\DoubleX\Module\DoubleX.Module\DoubleX.Module.csproj", "{F061820F-B814-4D1E-9A00-33A576A6D880}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleX.Resource", "..\DoubleX\Resource\DoubleX.Resource\DoubleX.Resource.csproj", "{6D1B8153-3616-44A8-814B-0D42C564B25F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugs", "Plugs", "{D21D7127-558A-45C8-B868-D50FE137E46A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleX.Plug.Sms", "..\DoubleX\Plugs\DoubleX.Plug.Sms\DoubleX.Plug.Sms.csproj", "{70763791-A932-47CD-888F-71D48DCF31CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleX.Plug.WeiXin", "..\DoubleX\Plugs\DoubleX.Plug.WeiXin\DoubleX.Plug.WeiXin.csproj", "{320417CF-09F9-4194-959F-63A16F12FA42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{73605CAD-7F69-4378-AAF9-57D393DDF456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73605CAD-7F69-4378-AAF9-57D393DDF456}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73605CAD-7F69-4378-AAF9-57D393DDF456}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73605CAD-7F69-4378-AAF9-57D393DDF456}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E5E6E1F-B608-4BD9-BFE5-19EE92FE334E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E5E6E1F-B608-4BD9-BFE5-19EE92FE334E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E5E6E1F-B608-4BD9-BFE5-19EE92FE334E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -104,12 +108,27 @@ Global
 		{6E452C18-6896-40DF-95D2-BE1A79865E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E452C18-6896-40DF-95D2-BE1A79865E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E452C18-6896-40DF-95D2-BE1A79865E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F061820F-B814-4D1E-9A00-33A576A6D880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F061820F-B814-4D1E-9A00-33A576A6D880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F061820F-B814-4D1E-9A00-33A576A6D880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F061820F-B814-4D1E-9A00-33A576A6D880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1B8153-3616-44A8-814B-0D42C564B25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1B8153-3616-44A8-814B-0D42C564B25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1B8153-3616-44A8-814B-0D42C564B25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1B8153-3616-44A8-814B-0D42C564B25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70763791-A932-47CD-888F-71D48DCF31CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70763791-A932-47CD-888F-71D48DCF31CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70763791-A932-47CD-888F-71D48DCF31CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70763791-A932-47CD-888F-71D48DCF31CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320417CF-09F9-4194-959F-63A16F12FA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320417CF-09F9-4194-959F-63A16F12FA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320417CF-09F9-4194-959F-63A16F12FA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320417CF-09F9-4194-959F-63A16F12FA42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{73605CAD-7F69-4378-AAF9-57D393DDF456} = {929740C8-A4C8-4950-A420-66B44E0DD010}
 		{9E5E6E1F-B608-4BD9-BFE5-19EE92FE334E} = {94368722-2B20-4CC5-A733-2714113AFA2C}
 		{BA9052DB-D5F1-4F94-95E3-87F9DB5B97B0} = {94368722-2B20-4CC5-A733-2714113AFA2C}
 		{11621554-2370-4C5E-922B-B2FD5367042F} = {51CAD715-35CF-4AD2-818F-B3E832C9CF9E}
@@ -121,6 +140,10 @@ Global
 		{F26D69C9-5FE9-4E67-BA13-019B8D5863B9} = {E9C9FEBC-57CF-46C8-ADFA-D360087812E1}
 		{4AEE3302-197B-4BA9-9CDF-3BC232CF2A79} = {4E6CD222-0F63-476B-95B8-769B8303D3A5}
 		{F497E7F7-A6AF-4C55-9749-B922C7D4692F} = {4E6CD222-0F63-476B-95B8-769B8303D3A5}
+		{F061820F-B814-4D1E-9A00-33A576A6D880} = {E9C9FEBC-57CF-46C8-ADFA-D360087812E1}
+		{6D1B8153-3616-44A8-814B-0D42C564B25F} = {929740C8-A4C8-4950-A420-66B44E0DD010}
+		{70763791-A932-47CD-888F-71D48DCF31CF} = {D21D7127-558A-45C8-B868-D50FE137E46A}
+		{320417CF-09F9-4194-959F-63A16F12FA42} = {D21D7127-558A-45C8-B868-D50FE137E46A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C4F6A53-96FA-4C24-994B-67E7E285953D}
