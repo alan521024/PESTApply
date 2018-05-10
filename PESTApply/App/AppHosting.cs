@@ -70,17 +70,7 @@ namespace PESTApply
 
             //(3)插件注入配置
             SmsConfiguration.Initialize();
-
-            //(4)模块处理
-            Mapper.Initialize(mapOpt =>
-            {
-                var profiles = EngineHelper.TypeFinder.FindClassesOfType<AutoMapper.Profile>();
-                foreach (var item in profiles)
-                {
-                    mapOpt.AddProfile(item);
-                }
-            });
-
+            
             //(End)构建容器
             EngineHelper.ContainerBuilder<IContainer>();
         }
