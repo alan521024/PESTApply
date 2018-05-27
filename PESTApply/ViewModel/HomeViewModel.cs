@@ -971,7 +971,7 @@ namespace PESTApply
             if (!VerifyHelper.IsEmpty(loginModel) && !VerifyHelper.IsEmpty(loginModel.obj) && loginModel.success)
             {
                 var resultObj = loginModel.obj as JObject;
-                var paramList = StringHelper.GetToListKeyValue(resultObj.GetItem("returnUrl").Replace("?", ""), listSplit: '&');
+                var paramList = StringHelper.GetToListKeyValue(resultObj.GetString("returnUrl").Replace("?", ""), listSplit: '&');
                 if (!VerifyHelper.IsEmpty(paramList) && paramList.Where(x => x.Key.ToLower() == "uuid").Count() > 0)
                 {
                     source.Message = "";

@@ -67,7 +67,7 @@ namespace PESTApply
                         {
                             //{"code":0,"message":null,"obj":true}
                             var obj = JsonHelper.Deserialize<JObject>(result.Content);
-                            if (obj != null && !BoolHelper.Get(obj.GetItem("obj")))
+                            if (obj != null && !BoolHelper.Get(obj.GetString("obj")))
                             {
                                 Environment.Exit(0);
                             }

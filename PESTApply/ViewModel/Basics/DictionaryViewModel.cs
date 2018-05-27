@@ -435,6 +435,18 @@ namespace PESTApply
                                     {
                                         if (BoolHelper.Get(obj["success"]) && obj["regExamInfolist"][0]["regExamInfos"] != null)
                                         {
+                                            JArray examArr = obj["regExamInfolist"][0]["regExamInfos"] as JArray;
+                                            if (!examArr.IsEmpty())
+                                            {
+                                                for (var i = 0; i < examArr.Count; i++)
+                                                {
+                                                    if (StringHelper.Get((examArr[i] as JObject).GetString("id")).IsEmpty())
+                                                    {
+                                                        examArr[i]["id"] = Guid.NewGuid().ToString();
+                                                    }
+                                                }
+                                            }
+
                                             var packages = JsonHelper.Deserialize<List<PETSPackageEntity>>(StringHelper.Get(obj["regExamInfolist"][0]["regExamInfos"]));
                                             packages.ForEach(item =>
                                             {
