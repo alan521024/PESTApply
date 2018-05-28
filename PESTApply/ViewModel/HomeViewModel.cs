@@ -63,7 +63,7 @@ namespace PESTApply
             get { return taskCount; }
             set { taskCount = value; RaisePropertyChanged(() => TaskCount); }
         }
-        private int taskCount = 5;
+        private int taskCount = 20;
 
         /// <summary>
         /// 重试次数
@@ -918,7 +918,7 @@ namespace PESTApply
                 datas.Add(new KeyValueModel("regList[0].packageId", packageValueArr[i]));
             }
             options.PostData = StringHelper.GetFormStringByKeyValues(datas);
-
+            
             var result = client.Request(options);
             if (!VerifyHelper.IsEmpty(result.Content))
             {
